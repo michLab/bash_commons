@@ -5,14 +5,14 @@ CYAN="\e[0;36m"
 RED="\e[0;31m"
 PURPLE="\e[0;35m"
 YELLOW="\e[0;33m"
-RESET_FFORMAT="\e[m"
+RESET_FORMAT="\e[m"
 
 BOLD="\e[1m"
 
 function print_color() {
     color=$1
     text=$2
-    echo -e "${color}${text}${RESET_FFORMAT}"
+    echo -e "${color}${text}${RESET_FORMAT}"
 }
 
 function print_success() {
@@ -28,6 +28,6 @@ function print_warning() {
 }
 
 function print_bold() {
-    echo -e "${BOLD}$1${RESET_FFORMAT}"
+    echo -e "${BOLD}$1${RESET_FORMAT}"
 }
 
